@@ -34,7 +34,7 @@ public class HotelController {
             return ResponseEntity.internalServerError().build();
         }
     }
-    @GetMapping("/{id}")
+    @GetMapping({"/{id}", "/{hotelname}/{id}"})
     public ResponseEntity<Hotel> getHotelById(@PathVariable Long id) {
         try {
             Hotel hotel = hotelService.getHotelById(id);
@@ -44,15 +44,7 @@ public class HotelController {
         }
     }
 
-//    @GetMapping("/{hotelname}/{id}")
-//    public ResponseEntity<Hotel> getHotelById(@PathVariable String hotelname, @PathVariable Long id) {
-//        try {
-//            Hotel hotel = hotelService.getHotelById(id);
-//            return ResponseEntity.ok(hotel);
-//        } catch (RuntimeException e) {
-//            return ResponseEntity.notFound().build();
-//        }
-//    }
+
 
     @GetMapping
     public ResponseEntity<List<Hotel>> getAllHotels(){
