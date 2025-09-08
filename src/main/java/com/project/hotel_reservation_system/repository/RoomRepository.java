@@ -37,5 +37,4 @@ public interface RoomRepository extends JpaRepository<Room,Long> {
                                     @Param("minCapacity") Integer minCapacity);
 
 
-//    List<Room> findByHotelHotelid(Long id);
 }
