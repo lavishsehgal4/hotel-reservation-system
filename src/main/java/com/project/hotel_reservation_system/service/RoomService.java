@@ -122,19 +122,22 @@ public class RoomService {
     }
 
     /**
-     * Get only available rooms for a specific hotel
+     * Get only  rooms for a specific hotel which are greater than given count
      */
     @Transactional(readOnly = true)
-    public List<Room> getAvailableRoomsByHotelId(Long hotelId) {
+    public List<Room> getAvailableRoomsByHotelId(Long hotelId,int minVal) {
         if (hotelId == null) {
             throw new IllegalArgumentException("Hotel ID cannot be null");
+        }
+        if(minVal<0){
+            throw new IllegalArgumentException("Minimum available rooms value cannot be negative");
         }
 
         // Verify hotel exists
         hotelRepository.findById(hotelId)
                 .orElseThrow(() -> new RuntimeException("Hotel not found with id: " + hotelId));
 
-        return roomRepository.findByHotelIdAndAvailableRoomsGreaterThan(hotelId, 0);
+        return roomRepository.findByHotelIdAndAvailableRoomsGreaterThan(hotelId, minVal);
     }
 
     /**
@@ -182,35 +185,8 @@ public class RoomService {
         return roomRepository.searchRoomsByFilters(hotelId, roomType, minPrice, maxPrice, minCapacity);
     }
 
-    /**
-     * Get rooms by room type for a specific hotel
-     */
-    @Transactional(readOnly = true)
-    public List<Room> getRoomsByHotelIdAndType(Long hotelId, String roomType) {
-        if (hotelId == null) {
-            throw new IllegalArgumentException("Hotel ID cannot be null");
-        }
-        if (roomType == null || roomType.trim().isEmpty()) {
-            throw new IllegalArgumentException("Room type cannot be null or empty");
-        }
 
-        return roomRepository.findByHotelIdAndRoomType(hotelId, roomType);
-    }
 
-    /**
-     * Get rooms within price range for a specific hotel
-     */
-    @Transactional(readOnly = true)
-    public List<Room> getRoomsByPriceRange(Long hotelId, BigDecimal minPrice, BigDecimal maxPrice) {
-        if (hotelId == null) {
-            throw new IllegalArgumentException("Hotel ID cannot be null");
-        }
-        if (minPrice != null && maxPrice != null && minPrice.compareTo(maxPrice) > 0) {
-            throw new IllegalArgumentException("Min price cannot be greater than max price");
-        }
-
-        return roomRepository.findByHotelIdAndPricePerNightBetween(hotelId, minPrice, maxPrice);
-    }
 
     /**
      * Reserve rooms (decrease available count)
