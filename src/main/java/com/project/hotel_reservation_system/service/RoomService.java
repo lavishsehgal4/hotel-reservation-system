@@ -1,5 +1,6 @@
 package com.project.hotel_reservation_system.service;
 
+import com.project.hotel_reservation_system.dto.CreateRoomRequest;
 import com.project.hotel_reservation_system.entity.Hotel;
 import com.project.hotel_reservation_system.entity.Room;
 import com.project.hotel_reservation_system.repository.HotelRepository;
@@ -23,26 +24,16 @@ public class RoomService {
     /**
      * Create a new room type for a hotel
      */
-    public Room createRoom(Room room) {
-        // Validate input
-        if (room == null) {
-            throw new IllegalArgumentException("Room cannot be null");
-        }
-        if (room.getHotel() == null || room.getHotel().getId() == null) {
-            throw new IllegalArgumentException("Hotel must be specified for the room");
-        }
+    public Room createRoom(CreateRoomRequest request) {
+        // Validate hotel exists
+        Hotel hotel = hotelRepository.findById(request.getHotelId())
+                .orElseThrow(() -> new RuntimeException("Hotel not found"));
 
-        // Verify hotel exists
-        Hotel hotel = hotelRepository.findById(room.getHotel().getId())
-                .orElseThrow(() -> new RuntimeException("Hotel not found with id: " + room.getHotel().getId()));
-
-        // Set the hotel reference
+        // Set hotel and save
+        Room room = request.getRoom();
         room.setHotel(hotel);
 
-        // Validate room data
-        validateRoomData(room);
-
-        // Ensure available rooms doesn't exceed total rooms
+        // Business validation
         if (room.getAvailableRooms() > room.getTotalRooms()) {
             throw new IllegalArgumentException("Available rooms cannot exceed total rooms");
         }
