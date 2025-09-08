@@ -140,33 +140,7 @@ public class RoomService {
         return roomRepository.findByHotelIdAndAvailableRoomsGreaterThan(hotelId, minVal);
     }
 
-    /**
-     * Update room inventory (total and available room counts)
-     */
-    public Room updateRoomInventory(Long roomId, Integer totalRooms, Integer availableRooms) {
-        if (roomId == null) {
-            throw new IllegalArgumentException("Room ID cannot be null");
-        }
-        if (totalRooms == null || availableRooms == null) {
-            throw new IllegalArgumentException("Total rooms and available rooms cannot be null");
-        }
-        if (totalRooms < 0 || availableRooms < 0) {
-            throw new IllegalArgumentException("Room counts cannot be negative");
-        }
-        if (availableRooms > totalRooms) {
-            throw new IllegalArgumentException("Available rooms cannot exceed total rooms");
-        }
 
-        // Find existing room
-        Room existingRoom = roomRepository.findById(roomId)
-                .orElseThrow(() -> new RuntimeException("Room not found with id: " + roomId));
-
-        // Update inventory
-        existingRoom.setTotalRooms(totalRooms);
-        existingRoom.setAvailableRooms(availableRooms);
-
-        return roomRepository.save(existingRoom);
-    }
 
     /**
      * Search rooms with filters
