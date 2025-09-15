@@ -1,0 +1,91 @@
+.hotel-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.hotel-card-header {
+  padding: 1.5rem 1.5rem 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.hotel-card-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.hotel-rating {
+  color: #f39c12;
+  font-size: 1.1rem;
+}
+
+.hotel-card-body {
+  padding: 1rem 1.5rem;
+}
+
+.hotel-description {
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hotel-location,
+.hotel-contact,
+.hotel-operations,
+.hotel-amenities {
+  margin-bottom: 1rem;
+}
+
+.hotel-location strong,
+.hotel-contact strong,
+.hotel-operations strong,
+.hotel-amenities strong {
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.hotel-location p {
+  margin: 0.25rem 0;
+  color: #7f8c8d;
+}
+
+.hotel-contact div,
+.hotel-operations div {
+  color: #7f8c8d;
+  margin: 0.25rem 0;
+}
+
+.amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.amenity-tag {
+  background-color: #3498db;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+.hotel-card-actions {
+  padding: 1rem 1.5rem;
+  background-color: #f8f9fa;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hotel-card-actions .btn {
+  flex: 1;
+}

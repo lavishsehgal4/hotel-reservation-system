@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfd4c21d-e08b-4e5b-aafd-dc835f253eb8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/HotelReservationSystemApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/controller/HotelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/controller/RoomController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/dto/CreateHotelRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/dto/CreateRoomRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/entity/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/entity/HotelAmenities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/entity/Room.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/repository/HotelAmenitiesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/repository/HotelRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/repository/RoomRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/service/HotelService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/service/RoomService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/hotel_reservation_system/HotelReservationSystemApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lavishsehgal4&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/lavishsehgal4/hotel-reservation-system.git&quot;,
+    &quot;accountId&quot;: &quot;e6f930d7-256a-4266-bb4d-3ccb06ee1671&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="32dL0B129x65DyvadRIKLHTFpRy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.hotel-reservation-system [package].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LENOVO/Downloads/hotel-reservation-system/hotel-reservation-system&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\Downloads\hotel-reservation-system\hotel-reservation-system\Backend" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfd4c21d-e08b-4e5b-aafd-dc835f253eb8" name="Changes" comment="" />
+      <created>1757745279188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757745279188</updated>
+    </task>
+    <servers />
+  </component>
+</project>
