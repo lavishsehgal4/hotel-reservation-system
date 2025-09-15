@@ -16,6 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/hotels")
+@CrossOrigin
 public class HotelController {
     @Autowired
     private HotelService hotelService;
@@ -27,9 +28,11 @@ public class HotelController {
             Hotel createdHotel = hotelService.createHotel(request.getHotel(), request.getAmenities());
             return ResponseEntity.status(HttpStatus.CREATED).body(createdHotel);
         } catch (IllegalArgumentException e) {
+
             System.out.println("IllegalArgumentException: " + e.getMessage());
             return ResponseEntity.badRequest().build();
         } catch (Exception e) {
+
             System.out.println("Exception: " + e.getMessage());
             return ResponseEntity.internalServerError().build();
         }
