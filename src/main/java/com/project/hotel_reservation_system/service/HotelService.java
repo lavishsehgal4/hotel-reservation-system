@@ -39,7 +39,7 @@ public class HotelService {
     public Hotel updateHotel(Long id, Hotel updatedHotel) {
         // Check if hotel exists
         Hotel existingHotel = getHotelById(id);
-
+        System.out.println("enter update service");
         // Update fields
         existingHotel.setName(updatedHotel.getName());
         existingHotel.setDescription(updatedHotel.getDescription());

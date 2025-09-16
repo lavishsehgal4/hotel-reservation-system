@@ -120,6 +120,7 @@ public class RoomController {
             @PathVariable Long roomId,
             @RequestParam Integer roomsToReserve) {
         try {
+            System.out.println(roomId+" "+roomsToReserve);
             Room room = roomService.reserveRooms(roomId, roomsToReserve);
             return ResponseEntity.ok(room);
         } catch (IllegalArgumentException e) {

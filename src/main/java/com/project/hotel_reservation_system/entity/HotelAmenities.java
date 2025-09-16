@@ -18,6 +18,7 @@ public class HotelAmenities {
     @JoinColumn(name = "hotel_id")
     @JsonIgnore
     @MapsId
+    @ToString.Exclude
     private Hotel hotel;
 
     // Amenity fields (boolean)

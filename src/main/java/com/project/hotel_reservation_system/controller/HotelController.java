@@ -59,8 +59,12 @@ public class HotelController {
     public ResponseEntity<Hotel> updateHotel(@PathVariable Long id, @RequestBody Hotel hotel) {
         try {
             Hotel updatedHotel = hotelService.updateHotel(id, hotel);
+            System.out.println("old id "+id+" new id "+updatedHotel.getId() );
+            System.out.println("enter update controller");
+
             return ResponseEntity.ok(updatedHotel);
         } catch (RuntimeException e) {
+            System.out.println("enter update controller error ");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
     }
