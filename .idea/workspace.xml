@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfd4c21d-e08b-4e5b-aafd-dc835f253eb8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/HotelReservationSystemApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/controller/HotelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/controller/RoomController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/dto/CreateHotelRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/dto/CreateRoomRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/entity/Hotel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/entity/HotelAmenities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/entity/Room.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/repository/HotelAmenitiesRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/repository/HotelRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/repository/RoomRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/service/HotelService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/project/hotel_reservation_system/service/RoomService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/project/hotel_reservation_system/HotelReservationSystemApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
